@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/single-price-grid-component-challenge-_ajhiyRyTW)
+- Live Site URL: [Live](https://mjpthedev.github.io/Single-price-grid-component-solution/)
 
 ## My process
 
