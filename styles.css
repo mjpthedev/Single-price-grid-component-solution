@@ -1,0 +1,242 @@
+html {
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+}
+  
+h2, h3, h4, p {
+    margin: 0px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url('images/bg-pattern.jpeg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    min-height:100vh; 
+    margin:0; 
+    position:relative;
+    padding: 20px;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 20px;
+}
+
+#card {
+    display: grid;
+    border-radius: 8px;
+    box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#top-section {
+    width: 100%;
+    padding: 28px 25px 31px 25px;
+    background-color: #ffffff;
+}
+
+#top-section h2 {
+    font-weight: 700;
+    color: #2bb3b2;
+    font-size: 1.23em;
+}
+
+#top-section h3 {
+    color: #c0df34;
+    margin: 25px 0px 16px 0px;
+    line-height: 1.37;
+    font-size: 0.91em;
+}
+
+#top-section p {
+    font-weight: 350;
+    color: #98a6bd;
+    line-height: 1.87;
+    font-size: 0.867em;
+}
+
+#bottom-section {
+    display: grid;
+    width: 100%;
+    color: #e5eff5;
+}
+
+#bottom-section h3 {
+    font-size: 1.1em;
+}
+
+#bottom-left-section {
+    background-color: #2ab2af;
+}
+
+#cost-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin: 22px 0px 11px 0px;
+}
+
+#price {
+    font-size: 1.95em;
+}
+
+#per-month {
+    color: #ebebeb;
+    margin-left: 12px;
+    font-weight: 100;
+    opacity: 0.8;
+}
+
+#access {
+    font-size: 0.97em;
+}
+
+#signup-button {
+    font-family: "Karla", sans-serif;
+    font-size: 1.05em;
+    margin-top: 30px;
+    color: white;
+    background-color: #c0df34;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 48px;
+    padding: 12px 12px 13px 12px;
+    box-shadow: 0px 10px 30px -10px rgba(130, 130, 130, 1);
+}
+
+#signup-button:active {
+    transform: translate(1px, 1px);
+}
+
+#bottom-right-section {
+    margin-bottom: -16px;
+    background-color: #4abebd;
+}
+
+#bottom-right-section ul {
+    margin: 18px 0px 16px 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 0.86em;
+    line-height: 1.453;
+}
+
+#bottom-left-section, #bottom-right-section {
+    padding: 25px 25px 24px 25px;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+    z-index: -1;
+  }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 350px) {
+    #card {
+        width: 90vw;
+        height: auto;
+    }
+}
+
+@media (min-width: 350px) {
+    #card {
+        width: 311px;
+        height: auto;
+    }
+}
+
+@media (min-width: 700px) {
+    #card {
+        width: 635px;
+        height: 475px;
+    }
+
+    #top-section {
+        padding: 40px 40px 40px 40px;
+    }
+
+    #top-section h2 {
+        font-size: 1.47em;
+    }
+
+    #top-section h3 {
+        margin: 23px 0px 9px 0px;
+        font-size: 1.1em;
+    }
+
+    #top-section p {
+        line-height: 1.65;
+        font-size: 0.99em;
+    }
+
+    #access {
+        line-height: 1.65;
+        font-size: 0.977em;
+    }
+
+    #bottom-left-section, #bottom-right-section {
+        padding: 41px 40px 40px 40px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #bottom-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
+    }
+
+    #cost-section {
+        margin: 21px 0px 9px 0px;
+        padding: 14px 0px 14px 0px;
+    }
+
+    #price {
+        font-size: 1.98em;
+    }
+
+    #per-month {
+        font-size: 1.02em;
+    }
+
+    #signup-button {
+        margin-top: 25px;
+        font-size: 1em;
+    }
+
+    #signup-button:hover {
+        cursor: pointer;
+        background-color: #9FC131;
+
+    }
+    #bottom-right-section ul {
+        margin-top: 19px;
+        font-size: 0.85em;
+        line-height: 1.47;
+        }
+    }
